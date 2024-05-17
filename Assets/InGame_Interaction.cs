@@ -8,6 +8,7 @@ public class InGame_Interaction : MonoBehaviour
 {
     private DropdownField DropdownField;
     private ProgressBar ProgressBar;
+    private Foldout Foldout;
     private Button UseButton;
     private Button KillButton;
     
@@ -18,12 +19,18 @@ public class InGame_Interaction : MonoBehaviour
         
         this.DropdownField = root.Q<DropdownField>("QuestDropDown");
         this.ProgressBar = root.Q<ProgressBar>("QuestProgress");
+        this.Foldout = root.Q<Foldout>("QuestFoldout");
         this.UseButton = root.Q<Button>("UseButton");
         this.KillButton = root.Q<Button>("KillButton");
         
         this.DropdownField.choices.Add("Quest 1");
         this.DropdownField.choices.Add("Quest 2");
         this.DropdownField.choices.Add("Quest 3");
+        
+        this.Foldout.text = "Quests";
+        this.Foldout.Add(new Label("Quest 1"));
+        this.Foldout.Add(new Label("Quest 2"));
+        this.Foldout.Add(new Label("Quest 3"));
 
         this.ProgressBar.value = 0;
         

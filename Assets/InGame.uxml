@@ -3,6 +3,7 @@
     <ui:VisualElement name="UpperLeft" style="flex-grow: 1; width: 25%; height: 50%; scale: 1 2; transform-origin: left top;">
         <ui:ProgressBar value="22" name="QuestProgress" />
         <ui:DropdownField index="-1" name="QuestDropDown" />
+        <ui:Foldout text="Foldout" value="false" name="QuestFoldout" />
     </ui:VisualElement>
     <ui:VisualElement name="LowerRight" style="flex-grow: 1; right: 3%; bottom: 3%; position: absolute; transform-origin: right bottom; width: 13%; height: 40%;">
         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="actionButton" style="height: 50%; background-image: url(&quot;project://database/Assets/Use.png?fileID=2800000&amp;guid=e322a870a076c77c5be5913b695beb5d&amp;type=3#Use&quot;);" />
