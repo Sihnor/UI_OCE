@@ -4,16 +4,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public enum Levels
-{
-    MainMenu = 0,
-    Start,
-    Settings,
-    Quit
-}
-
-
 public class Buttons : MonoBehaviour
 {
     public void LevelButton(Levels level)

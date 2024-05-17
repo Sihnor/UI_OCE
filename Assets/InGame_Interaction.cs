@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -11,7 +12,9 @@ public class InGame_Interaction : MonoBehaviour
     private Foldout Foldout;
     private Button UseButton;
     private Button KillButton;
-    
+
+    [SerializeField] GameObject tempo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,9 @@ public class InGame_Interaction : MonoBehaviour
         this.Foldout = root.Q<Foldout>("QuestFoldout");
         this.UseButton = root.Q<Button>("UseButton");
         this.KillButton = root.Q<Button>("KillButton");
-        
+
+        this.UseButton.clicked += Temp;
+
         this.DropdownField.choices.Add("Quest 1");
         this.DropdownField.choices.Add("Quest 2");
         this.DropdownField.choices.Add("Quest 3");
@@ -44,5 +49,12 @@ public class InGame_Interaction : MonoBehaviour
         {
             this.ProgressBar.value = progress;
         };
+
+        
+    }
+
+    void Temp()
+    {
+        tempo.SetActive(true);
     }
 }

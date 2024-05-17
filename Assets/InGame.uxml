@@ -6,7 +6,7 @@
         <ui:Foldout text="Foldout" value="false" name="QuestFoldout" />
     </ui:VisualElement>
     <ui:VisualElement name="LowerRight" style="flex-grow: 1; right: 3%; bottom: 3%; position: absolute; transform-origin: right bottom; width: 13%; height: 40%;">
-        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="actionButton" style="height: 50%; background-image: url(&quot;project://database/Assets/Use.png?fileID=2800000&amp;guid=e322a870a076c77c5be5913b695beb5d&amp;type=3#Use&quot;);" />
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="UseButton" class="actionButton" style="height: 50%; background-image: url(&quot;project://database/Assets/Use.png?fileID=2800000&amp;guid=e322a870a076c77c5be5913b695beb5d&amp;type=3#Use&quot;);" />
         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="actionButton" style="height: 50%; background-image: url(&quot;project://database/Assets/Kill.png?fileID=2800000&amp;guid=9c745cd76b3cb2e90a03695ccfcd6205&amp;type=3#Kill&quot;);" />
     </ui:VisualElement>
 </ui:UXML>

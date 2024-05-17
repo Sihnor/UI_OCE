@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,6 +35,8 @@ public class ButtonMinigame : MonoBehaviour
 
             // Game success here ...
             Debug.Log("Game success");
+
+            GameManager.Instance.SetQuestProgress(100);
 
             // Deactivate game object when minigame done
             gameObject.SetActive(false);
